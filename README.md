@@ -16,3 +16,7 @@ The .wav file must have the following format:
 How I use the looper is for learning new songs part by part. I slice the songs into 10-15 pieces and add them one by one to each folder in continuously. This is really tedious and I would like to partly automate this process by letting a script take care of copying the .wav files to the looper with the correct structure. 
 
 The other problem is managing already filled memory slots. I'd like to empty out a range of slots at once and easily list what is in them.
+
+## Usage
+
+TBD
