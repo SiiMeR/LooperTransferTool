@@ -1,7 +1,13 @@
 import click
-import os
+import os 
 
-def main() -> None:
+@click.group()
+@click.option('--debug/--no-debug', default=False)
+def cli(debug):
+    print(f'Debug mode is {"on" if debug else "off"}')
+    
+@cli.command()
+def listmemorycontents():
     drive = "F:"
     folder = "ROLAND/WAVE"
     path = os.path.join(drive, folder)
@@ -21,4 +27,4 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-    main()
+    cli()
